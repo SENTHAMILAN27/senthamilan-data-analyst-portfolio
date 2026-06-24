@@ -324,7 +324,23 @@ section{padding:88px 6% 64px;}
     flex-direction:column;
     gap:14px;
 }
+@media (max-width:768px){
 
+  .project-top{
+      display:flex !important;
+      flex-direction:column !important;
+      gap:20px;
+  }
+
+  .project-left{
+      width:100%;
+  }
+
+  .project-preview{
+      width:100%;
+  }
+
+}
 @media(max-width:900px){
     .project-top{
         grid-template-columns:1fr;
@@ -525,6 +541,23 @@ footer span{font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monos
       width:100%;
       overflow-x:auto;
       overflow-y:hidden;
+  }
+
+}
+@media (max-width:768px){
+
+  .project-preview{
+      width:100%;
+      max-width:100%;
+      overflow:hidden;
+  }
+
+  .project-preview img{
+      width:100%;
+      max-width:100%;
+      height:auto;
+      object-fit:contain;
+      display:block;
   }
 
 }
