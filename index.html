@@ -306,9 +306,7 @@ section{padding:88px 6% 64px;}
     margin-bottom:30px;
 }
 
-
-
-eview{
+.project-preview{
     position:relative;
 }
 
@@ -326,23 +324,7 @@ eview{
     flex-direction:column;
     gap:14px;
 }
-@media (max-width:768px){
 
-  .project-top{
-      display:flex !important;
-      flex-direction:column !important;
-      gap:20px;
-  }
-
-  .project-left{
-      width:100%;
-  }
-
-  .project-preview{
-      width:100%;
-  }
-
-}
 @media(max-width:900px){
     .project-top{
         grid-template-columns:1fr;
@@ -385,23 +367,17 @@ eview{
     gap:8px;
     margin-top:10px;
     overflow-x:auto;
-    padding-bottom:4px;
 }
 
 .mini-thumbs img{
     width:40px;
-    height:50px;
+    height:45px;
     object-fit:cover;
     border-radius:6px;
     cursor:pointer;
-    opacity:.6;
-    flex-shrink:0;
     border:2px solid transparent;
-}
-
-.mini-thumbs img.act{
-    border-color:var(--accent);
-    opacity:1;
+    opacity:.7;
+    transition:.2s;
 }
 
 .mini-thumbs img:hover{
@@ -467,7 +443,7 @@ eview{
 .gths{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;}
 .gths::-webkit-scrollbar{height:3px;}
 .gths::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px;}
-.gth{width:100px;height:60px;object-fit:cover;object-position:top;border-radius:6px;border:2px solid transparent;cursor:pointer;flex-shrink:0;transition:border-color .2s,opacity .2s;opacity:.55;}
+.gth{width:0px;height:60px;object-fit:cover;object-position:top;border-radius:6px;border:2px solid transparent;cursor:pointer;flex-shrink:0;transition:border-color .2s,opacity .2s;opacity:.55;}
 .gth.act{border-color:var(--accent2);opacity:1;}
 
 .par3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px;}
@@ -524,50 +500,6 @@ footer span{font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monos
   .tc-inner{flex-wrap:wrap;}
   .pg,.cg,.edg{grid-template-columns:1fr;}
   .mets4{grid-template-columns:repeat(2,1fr);}
-}
-@media (max-width: 768px){
-
-  .gw{
-      width:100%;
-      overflow:hidden;
-  }
-
-  .gm{
-      width:100%;
-      max-width:100%;
-      overflow:hidden;
-  }
-
-  .gm img{
-      width:100%;
-      max-width:100%;
-      height:auto;
-      object-fit:contain;
-  }
-
-  .gths{
-      width:100%;
-      overflow-x:auto;
-      overflow-y:hidden;
-  }
-
-}
-@media (max-width:768px){
-
-  .project-preview{
-      width:50%;
-      max-width:100%;
-      overflow:hidden;
-  }
-
-  .project-preview img{
-      width:50%;
-      max-width:100%;
-      height:auto;
-      object-fit:contain;
-      display:block;
-  }
-
 }
 </style>
 </head>
