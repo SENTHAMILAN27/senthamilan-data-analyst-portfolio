@@ -525,7 +525,50 @@ footer span{font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monos
   .pg,.cg,.edg{grid-template-columns:1fr;}
   .mets4{grid-template-columns:repeat(2,1fr);}
 }
+@media (max-width: 768px){
 
+  .gw{
+      width:100%;
+      overflow:hidden;
+  }
+
+  .gm{
+      width:100%;
+      max-width:100%;
+      overflow:hidden;
+  }
+
+  .gm img{
+      width:100%;
+      max-width:100%;
+      height:auto;
+      object-fit:contain;
+  }
+
+  .gths{
+      width:100%;
+      overflow-x:auto;
+      overflow-y:hidden;
+  }
+
+}
+@media (max-width:768px){
+
+  .project-preview{
+      width:20%;
+      max-width:100%;
+      overflow:hidden;
+  }
+
+  .project-preview img{
+      width:20%;
+      max-width:100%;
+      height:auto;
+      object-fit:contain;
+      display:block;
+  }
+
+}
 </style>
 </head>
 <body>
